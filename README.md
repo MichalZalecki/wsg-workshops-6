@@ -1,6 +1,6 @@
 # WSG Workshops App
 
-App created at WSG workshops meetings. This code base presents result app after third meeting at 30.04.2015.
+App created at WSG workshops meetings. This code base presents result app after forth meeting at 14.05.2015.
 
 ## Fork
 
