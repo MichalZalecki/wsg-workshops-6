@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong><br/>
+  <%= @message.body %>
+</p>
+
+<p>
+  <strong>Author:</strong><br/>
+  <%= @message.user.name if @message.user %>
+</p>
+
+<p>
+  <strong>Created at:</strong><br/>
+  <%= l @message.created_at %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
