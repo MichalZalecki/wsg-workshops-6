@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  console.log('Strona jest załadowana, wyświetlam to z application.js');
+
+  $('.info-box').click(function() {
+    alert('Kliknąłem coś na stronie!');
+  });
+});
