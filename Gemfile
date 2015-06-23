@@ -15,6 +15,14 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-github'
+group :development, :test do
+  gem 'byebug'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
+  gem 'awesome_print', require: 'ap'
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,6 +47,3 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-gem 'rspec-rails'
-
