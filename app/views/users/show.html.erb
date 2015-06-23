@@ -10,5 +10,7 @@
   <%= @user.desc %>
 </p>
 
+<ul id="repos" data-url="<%= "#{@user.git_api_url}/repos" %>"></ul>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
