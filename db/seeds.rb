@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+User.create! name:  'Michal',
+             desc:  'Nic nie jest tak trwałe jak tymczasowa polityka rządu.',
+             email: 'michal.zalecki@monterail.com',
+             password: 'mfriedman2006',
+             password_confirmation: 'mfriedman2006'

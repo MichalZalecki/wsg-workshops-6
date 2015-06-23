@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513200903) do
+ActiveRecord::Schema.define(version: 20150623221219) do
 
   create_table "messages", force: true do |t|
     t.text     "body"
@@ -36,6 +36,9 @@ ActiveRecord::Schema.define(version: 20150513200903) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "git_api_url"
   end
 
 end
