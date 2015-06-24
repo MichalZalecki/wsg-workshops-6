@@ -1,14 +1,16 @@
 # WSG Workshops App
 
-App created at WSG workshops meetings. This code base presents result app after meeting at 25.06.2015.
+App created at WSG workshops meetings. This code base presents result app after meeting on 25.06.2015.
 
 ## Fork
 
-Please fork this project to your own Github account.
+Please fork this project to your own GitHub account.
 
 ## Setup
 
-Create `.env` file in the root directory. Add valid `GITHUB_APP_ID` and `GITHUB_APP_SECRET` for OmniAuth. 
+Create `.env` file in the root directory. Add valid `GITHUB_APP_ID` and `GITHUB_APP_SECRET` for OmniAuth.
+
+You also need need to set up [GitHub application](https://developer.github.com/guides/basics-of-authentication/).
 
 ### Initial setup
 ```
