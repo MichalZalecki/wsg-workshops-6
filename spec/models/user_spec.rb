@@ -2,23 +2,31 @@ require 'rails_helper'
 
 describe User do
 
-  let(:user) { User.new }
+  let(:user) { build(:user) }
 
-  context "creating user" do
+  it 'should have valid factory' do
+    expect(user.valid?).to eq(true)
+  end
+
+  it 'should have many messages' do
+    expect(User.reflect_on_association(:messages).macro).to  eq(:has_many)
+  end
+
+  context 'creating user' do
+
+    before(:each) { user.save }
 
     it 'should have initial name' do
-      user = User.create
       expect(user.name).to eq('Anonim')
     end
 
     it 'should have empty messages collection' do
-      user = User.create
       expect(user.messages).to eq([])
     end
 
   end
 
-  context "calculations" do
+  context '#calculations' do
 
     it 'should have method named "calculations"' do
       expect(user).to respond_to('calculations')
